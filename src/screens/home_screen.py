@@ -15,13 +15,13 @@ def home_screen():
 
     with col1:
         st.header("I'm Teacher")
-        st.image("https://i.ibb.co/YTK9N9JS/teachlogo.jpg", width=110)
+        st.image("https://i.ibb.co/qLMQtYJP/tealogo.png", width=106)
         if st.button('Teacher Portal', type="primary", icon=':material/arrow_outward:', icon_position='right' ):
-            st.session_state['login_type']='teacher'
+            st.session_state["login_type"] = "teacher"
             st.rerun()
     with  col2:
         st.header("I'm student")
-        st.image("https://i.ibb.co/MYXJhJV/stulogo.jpg", width=110)
+        st.image("https://i.ibb.co/TMv3GqHG/stulogo.png", width=118)
         if st.button('Student Portal', type="primary", icon=':material/arrow_outward:', icon_position='right' ):
             st.session_state['login_type']='student'
             st.rerun()

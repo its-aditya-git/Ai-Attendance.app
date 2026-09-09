@@ -1,102 +1,98 @@
 import streamlit as st
 
+
 def style_background_home():
 
     st.markdown("""
         <style>
-               .stApp {
-                    background: #5865f2 !important;
-                }
-                   
-                .stApp div[data-testid="stColumn"] {
-                   background-color: #E0E3FF !important;
-                   padding: 2.5erm !important;
-                   border-radius: 5erm !important;
-                   }
-        </style>   
+            .stApp {
+                background: #5865f2 !important;
+            }
 
-                """
-            ,unsafe_allow_html=True)
+            .stApp div[data-testid="stColumn"] {
+                background-color: #E0E3FF !important;
+                padding: 2.2rem !important;
+                border-radius: 6rem !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
 
 def style_background_dashboard():
 
     st.markdown("""
         <style>
-               .stApp {
-                    background:#E0E3FF !important;
-                } 
-
-        </style>   
-
-                """
-            ,unsafe_allow_html=True)    
+            .stApp {
+                background: #E0E3FF !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
 
 
 def style_base_layout():
 
     st.markdown("""
         <style>
+
         @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-         /* Hide Top Bar of streamlit */   
-               
-                #MainMenu, footer, header {
-                    visibility: hidden;
-                }
-                .block-container {
-                    padding-top: 1.5rem !important;
-                }
+        /* Hide Top Bar of Streamlit */
+        #MainMenu, footer, header {
+            visibility: hidden;
+        }
 
-                h1 {
-                    font-family: 'Climate Crisis', sans-serif !important;
-                    font-size: 2rem !important;
-                    line-height: 0.9 !important;
-                    margin-bottom: 0rem !important;
-                }    
-                
-                h2 {
-                    font-family: 'Climate Crisis', sans-serif !important;
-                    font-size: 2rem !important;
-                    line-height: 1.1 !important;
-                    margin-bottom: 0rem !important;
-                }    
+        .block-container {
+            padding-top: 1.5rem !important;
+        }
 
-                h3, h4, p {
-                    font_family: 'outfit', sans-serif;
-                }
-                
-                button{
-                   border_radius: 1.5rem !important; 
-                   background: #5865F2 !important;
-                   color: white !important;
-                   padding: 10px 20px !important;
-                   border: none !important;
-                   transition: transform 0.24s ease-in-out !important;
-                   }
+        h1 {
+            font-family: 'Climate Crisis', sans-serif !important;
+            font-size: 2rem !important;
+            line-height: 0.9 !important;
+            margin-bottom: 0rem !important;
+        }
 
-                button[kind="Secondary"]{
-                   border_radius: 1.5rem !important; 
-                   background: #EB459E !important;
-                   color: white !important;
-                   padding: 10px 20px !important;
-                   border: none !important;
-                   transition: transform 0.24s ease-in-out !important;
-                   }
+        h2 {
+            font-family: 'Climate Crisis', sans-serif !important;
+            font-size: 2rem !important;
+            line-height: 1.1 !important;
+            margin-bottom: 0rem !important;
+        }
 
-                button[kind="tertiary"]{
-                   border_radius: 1.5rem !important; 
-                   background: black !important;
-                   color: white !important;
-                   padding: 10px 20px !important;
-                   border: none !important;
-                   transition: transform 0.24s ease-in-out !important;
-                   }   
+        h3, h4, p {
+            font-family: 'Outfit', sans-serif;
+        }
 
-                buttonn:hover{
-                   transtorm: scale(1.05)}
+        button {
+            border-radius: 1.5rem !important;
+            background-color: #5865F2 !important;
+            color: white !important;
+            padding: 10px 20px !important;
+            border: none !important;
+            transition: transform 0.24s ease-in-out !important;
+        }
 
-        </style>   
+        button[kind="Secondary"] {
+            border-radius: 1.5rem !important;
+            background-color: #EB459E !important;
+            color: white !important;
+            padding: 10px 20px !important;
+            border: none !important;
+            transition: transform 0.24s ease-in-out !important;
+        }
 
-                """
-            ,unsafe_allow_html=True)    
+        button[kind="tertiary"] {
+            border-radius: 1.5rem !important;
+            background-color: black !important;
+            color: white !important;
+            padding: 10px 20px !important;
+            border: none !important;
+            transition: transform 0.24s ease-in-out !important;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        </style>
+    """, unsafe_allow_html=True)
